@@ -1,0 +1,34 @@
+{
+  "name": "neopixels-app",
+  "version": "1.0.0",
+  "description": "Desafio 2 del curso de electron nivel 2",
+  "main": "main.js",
+  "build":{
+    "appId":"Neopixels App",
+    "win":{
+      "target":"nsis",
+      "icon":"img/logo.jpg"
+    },
+    "nsis":{
+      "oneClick":false,
+      "allowToChangeInstallationDirectory":true,
+      "installerIcon":"img/logo.ico",
+      "uninstallerIcon":"img/logo.ico",
+      "license":"license.txt"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"electron-builder",
+    "start": "electron ."
+  },
+  "author": "Josbert Guedez",
+  "license": "ISC",
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  },
+  "devDependencies": {
+    "electron": "^21.1.0",
+    "electron-builder": "^23.6.0"
+  }
+}

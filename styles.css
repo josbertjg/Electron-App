@@ -1,0 +1,29 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    background-color: black;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+}
+#drag{
+    width: 100%;
+    -webkit-app-region:drag;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    justify-content: end;
+    list-style-type: none;
+}
+li{
+    margin-right: 1.5rem;
+}
+li:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
